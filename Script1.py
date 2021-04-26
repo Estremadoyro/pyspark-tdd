@@ -41,6 +41,7 @@ SUMMARY_INTERACTIONS = TP_UNIVERSOS_INTERACCION.groupBy("tipinteraccion", "desti
 
 #Crear vista 
 SUMMARY_INTERACTIONS.createOrReplaceTempView("SUMMARY_INTERACTIONS")
+
 # Mostrar tabla final 
 spark.sql("SELECT * FROM SUMMARY_INTERACTIONS").show()
 
